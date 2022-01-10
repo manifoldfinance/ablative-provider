@@ -1,0 +1,6 @@
+dist/
+build/
+*.min.js
+*.js
+*.html
+docs/

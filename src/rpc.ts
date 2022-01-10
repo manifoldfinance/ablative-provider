@@ -1,7 +1,12 @@
-import { ChainId } from '@sushiswap/sdk'
+/**
+ * @filename rpc
+ * @summary RPC endpoint information
+ */
 
-const rpc = {
-  [ChainId.MAINNET]: `https://api.sushirelay.com/v1` ?? 'https://api.staging.sushirelay.com/v1',
-}
+import * as ChainId from './chainid';
 
-export default rpc
+const RPC = {
+  [ChainId.MAINNET]: 'https://api.sushirelay.com/v1',
+};
+
+export default RPC;
