@@ -12,6 +12,12 @@
 
 [API Documentation](https://manifoldfinance.github.io/ablative-provider/)
 
+## Usage 
+
+[see this feature branch for SushiSwap/Interface](https://github.com/manifoldfinance/sushiswap-interface/commit/2560d87342c90753c7368640a2dd700c8c54ca65)
+
+[`src/connectors/injected-connector/index.ts`](https://github.com/manifoldfinance/sushiswap-interface/blob/2560d87342c90753c7368640a2dd700c8c54ca65/src/connectors/injected-connector/index.ts)
+
 
 ## License
 
