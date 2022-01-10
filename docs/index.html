@@ -1,129 +1,23 @@
 <!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>ablative-provider</title><meta name="description" content="Documentation for ablative-provider"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">ablative-provider</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>ablative-provider</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
-<a href="#abi-storage-api-openapi-definition" id="abi-storage-api-openapi-definition" style="color: inherit; text-decoration: none;">
-  <h1>ABI Storage API OpenAPI Definition</h1>
+<a href="#ablative-provider" id="ablative-provider" style="color: inherit; text-decoration: none;">
+  <h1><code>ablative provider</code></h1>
 </a>
+<blockquote>
+<p>🔗 <a href="https://www.npmjs.com/package/ablative-provider">https://www.npmjs.com/package/ablative-provider</a></p>
+</blockquote>
 
-<a href="#working-on-your-openapi-definition" id="working-on-your-openapi-definition" style="color: inherit; text-decoration: none;">
-  <h2>Working on your OpenAPI Definition</h2>
+<a href="#motivation" id="motivation" style="color: inherit; text-decoration: none;">
+  <h2>Motivation</h2>
 </a>
+<p><a href="https://sambacha.github.io/primitives/2021/12/20/Web3-Technical-Debt-Creep.html">Read this extensive engineering writeup on our blog</a></p>
 
-<a href="#install" id="install" style="color: inherit; text-decoration: none;">
-  <h3>Install</h3>
+<a href="#api" id="api" style="color: inherit; text-decoration: none;">
+  <h2>API</h2>
 </a>
-<ol>
-<li>Install <a href="https://nodejs.org/">Node JS</a>.</li>
-<li>Clone this repo and run <code>npm install</code> in the repo root.</li>
-</ol>
+<p><a href="https://manifoldfinance.github.io/ablative-provider/">API Documentation</a></p>
 
-<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
-  <h3>Usage</h3>
+<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+  <h2>License</h2>
 </a>
-
-<a href="#npm-start" id="npm-start" style="color: inherit; text-decoration: none;">
-  <h4><code>npm start</code></h4>
-</a>
-<p>Starts the reference docs preview server.</p>
-
-<a href="#npm-run-build" id="npm-run-build" style="color: inherit; text-decoration: none;">
-  <h4><code>npm run build</code></h4>
-</a>
-<p>Bundles the definition to the dist folder.</p>
-
-<a href="#npm-test" id="npm-test" style="color: inherit; text-decoration: none;">
-  <h4><code>npm test</code></h4>
-</a>
-<p>Validates the definition.</p>
-
-<a href="#contribution-guide" id="contribution-guide" style="color: inherit; text-decoration: none;">
-  <h2>Contribution Guide</h2>
-</a>
-<p>Below is a sample contribution guide. The tools
-in the repository don&#39;t restrict you to any
-specific structure. Adjust the contribution guide
-to match your own structure. However, if you
-don&#39;t have a structure in mind, this is a
-good place to start.</p>
-<p>Update this contribution guide if you
-adjust the file/folder organization.</p>
-<p>The <code>.redocly.yaml</code> controls settings for various
-tools including the lint tool and the reference
-docs engine.  Open it to find examples and
-<a href="https://redoc.ly/docs/cli/configuration/">read the docs</a>
-for more information.</p>
-
-<a href="#schemas" id="schemas" style="color: inherit; text-decoration: none;">
-  <h3>Schemas</h3>
-</a>
-
-<a href="#adding-schemas" id="adding-schemas" style="color: inherit; text-decoration: none;">
-  <h4>Adding Schemas</h4>
-</a>
-<ol>
-<li>Navigate to the <code>openapi/components/schemas</code> folder.</li>
-<li>Add a file named as you wish to name the schema.</li>
-<li>Define the schema.</li>
-<li>Refer to the schema using the <code>$ref</code> (see example below).</li>
-</ol>
-
-<a href="#example-schema" id="example-schema" style="color: inherit; text-decoration: none;">
-  <h5>Example Schema</h5>
-</a>
-<p>This is a very simple schema example:</p>
-<pre><code class="language-yaml"><span class="hl-0">type</span><span class="hl-1">: </span><span class="hl-2">string</span><br/><span class="hl-0">description</span><span class="hl-1">: </span><span class="hl-2">The resource ID. Defaults to UUID v4</span><br/><span class="hl-0">maxLength</span><span class="hl-1">: </span><span class="hl-3">50</span><br/><span class="hl-0">example</span><span class="hl-1">: </span><span class="hl-2">4f6cf35x-2c4y-483z-a0a9-158621f77a21</span>
-</code></pre>
-<p>This is a more complex schema example:</p>
-<pre><code class="language-yaml"><span class="hl-0">type</span><span class="hl-1">: </span><span class="hl-2">object</span><br/><span class="hl-0">properties</span><span class="hl-1">:</span><br/><span class="hl-1">  </span><span class="hl-0">id</span><span class="hl-1">:</span><br/><span class="hl-1">    </span><span class="hl-0">description</span><span class="hl-1">: </span><span class="hl-2">The customer identifier string</span><br/><span class="hl-1">    </span><span class="hl-0">readOnly</span><span class="hl-1">: </span><span class="hl-4">true</span><br/><span class="hl-1">    </span><span class="hl-0">allOf</span><span class="hl-1">:</span><br/><span class="hl-1">      - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">./ResourceId.yaml</span><br/><span class="hl-1">  </span><span class="hl-0">websiteId</span><span class="hl-1">:</span><br/><span class="hl-1">    </span><span class="hl-0">description</span><span class="hl-1">: </span><span class="hl-2">The website&#39;s ID</span><br/><span class="hl-1">    </span><span class="hl-0">allOf</span><span class="hl-1">:</span><br/><span class="hl-1">      - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">./ResourceId.yaml</span><br/><span class="hl-1">  </span><span class="hl-0">paymentToken</span><span class="hl-1">:</span><br/><span class="hl-1">    </span><span class="hl-0">type</span><span class="hl-1">: </span><span class="hl-2">string</span><br/><span class="hl-1">    </span><span class="hl-0">writeOnly</span><span class="hl-1">: </span><span class="hl-4">true</span><br/><span class="hl-1">    </span><span class="hl-0">description</span><span class="hl-1">: </span><span class="hl-5">|</span><br/><span class="hl-2">      A write-only payment token; if supplied, it will be converted into a</span><br/><span class="hl-2">      payment instrument and be set as the `defaultPaymentInstrument`. The</span><br/><span class="hl-2">      value of this property will override the `defaultPaymentInstrument`</span><br/><span class="hl-2">      in the case that both are supplied. The token may only be used once</span><br/><span class="hl-2">      before it is expired.</span><br/><span class="hl-1">  </span><span class="hl-0">defaultPaymentInstrument</span><span class="hl-1">:</span><br/><span class="hl-1">    </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">./PaymentInstrument.yaml</span><br/><span class="hl-1">  </span><span class="hl-0">createdTime</span><span class="hl-1">:</span><br/><span class="hl-1">    </span><span class="hl-0">description</span><span class="hl-1">: </span><span class="hl-2">The customer created time</span><br/><span class="hl-1">    </span><span class="hl-0">allOf</span><span class="hl-1">:</span><br/><span class="hl-1">      - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">./ServerTimestamp.yaml</span><br/><span class="hl-1">  </span><span class="hl-0">updatedTime</span><span class="hl-1">:</span><br/><span class="hl-1">    </span><span class="hl-0">description</span><span class="hl-1">: </span><span class="hl-2">The customer updated time</span><br/><span class="hl-1">    </span><span class="hl-0">allOf</span><span class="hl-1">:</span><br/><span class="hl-1">      - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">./ServerTimestamp.yaml</span><br/><span class="hl-1">  </span><span class="hl-0">tags</span><span class="hl-1">:</span><br/><span class="hl-1">    </span><span class="hl-0">description</span><span class="hl-1">: </span><span class="hl-2">A list of customer&#39;s tags</span><br/><span class="hl-1">    </span><span class="hl-0">readOnly</span><span class="hl-1">: </span><span class="hl-4">true</span><br/><span class="hl-1">    </span><span class="hl-0">type</span><span class="hl-1">: </span><span class="hl-2">array</span><br/><span class="hl-1">    </span><span class="hl-0">items</span><span class="hl-1">:</span><br/><span class="hl-1">      </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">./Tags/Tag.yaml</span><br/><span class="hl-1">  </span><span class="hl-0">revision</span><span class="hl-1">:</span><br/><span class="hl-1">    </span><span class="hl-0">description</span><span class="hl-1">: </span><span class="hl-5">&gt;</span><br/><span class="hl-2">      The number of times the customer data has been modified.</span><br/><br/><span class="hl-2">      The revision is useful when analyzing webhook data to determine if the</span><br/><span class="hl-2">      change takes precedence over the current representation.</span><br/><span class="hl-1">    </span><span class="hl-0">type</span><span class="hl-1">: </span><span class="hl-2">integer</span><br/><span class="hl-1">    </span><span class="hl-0">readOnly</span><span class="hl-1">: </span><span class="hl-4">true</span><br/><span class="hl-1">  </span><span class="hl-0">_links</span><span class="hl-1">:</span><br/><span class="hl-1">    </span><span class="hl-0">type</span><span class="hl-1">: </span><span class="hl-2">array</span><br/><span class="hl-1">    </span><span class="hl-0">description</span><span class="hl-1">: </span><span class="hl-2">The links related to resource</span><br/><span class="hl-1">    </span><span class="hl-0">readOnly</span><span class="hl-1">: </span><span class="hl-4">true</span><br/><span class="hl-1">    </span><span class="hl-0">minItems</span><span class="hl-1">: </span><span class="hl-3">3</span><br/><span class="hl-1">    </span><span class="hl-0">items</span><span class="hl-1">:</span><br/><span class="hl-1">      </span><span class="hl-0">anyOf</span><span class="hl-1">:</span><br/><span class="hl-1">        - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">./Links/SelfLink.yaml</span><br/><span class="hl-1">        - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">./Links/NotesLink.yaml</span><br/><span class="hl-1">        - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">./Links/DefaultPaymentInstrumentLink.yaml</span><br/><span class="hl-1">        - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">./Links/LeadSourceLink.yaml</span><br/><span class="hl-1">        - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">./Links/WebsiteLink.yaml</span><br/><span class="hl-1">  </span><span class="hl-0">_embedded</span><span class="hl-1">:</span><br/><span class="hl-1">    </span><span class="hl-0">type</span><span class="hl-1">: </span><span class="hl-2">array</span><br/><span class="hl-1">    </span><span class="hl-0">description</span><span class="hl-1">: </span><span class="hl-5">&gt;</span><span class="hl-4">-</span><br/><span class="hl-2">      Any embedded objects available that are requested by the `expand`</span><br/><span class="hl-2">      querystring parameter.</span><br/><span class="hl-1">    </span><span class="hl-0">readOnly</span><span class="hl-1">: </span><span class="hl-4">true</span><br/><span class="hl-1">    </span><span class="hl-0">minItems</span><span class="hl-1">: </span><span class="hl-3">1</span><br/><span class="hl-1">    </span><span class="hl-0">items</span><span class="hl-1">:</span><br/><span class="hl-1">      </span><span class="hl-0">anyOf</span><span class="hl-1">:</span><br/><span class="hl-1">        - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">./Embeds/LeadSourceEmbed.yaml</span><br/>
-</code></pre>
-
-<a href="#using-the-ref" id="using-the-ref" style="color: inherit; text-decoration: none;">
-  <h5>Using the <code>$ref</code></h5>
-</a>
-<p>Notice in the complex example above the schema definition itself has <code>$ref</code> links to other schemas defined.</p>
-<p>Here is a small excerpt with an example:</p>
-<pre><code class="language-yaml"><span class="hl-0">defaultPaymentInstrument</span><span class="hl-1">:</span><br/><span class="hl-1">  </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">./PaymentInstrument.yaml</span>
-</code></pre>
-<p>The value of the <code>$ref</code> is the path to the other schema definition.</p>
-<p>You may use <code>$ref</code>s to compose schema from other existing schema to avoid duplication.</p>
-<p>You will use <code>$ref</code>s to reference schema from your path definitions.</p>
-
-<a href="#editing-schemas" id="editing-schemas" style="color: inherit; text-decoration: none;">
-  <h4>Editing Schemas</h4>
-</a>
-<ol>
-<li>Navigate to the <code>openapi/components/schemas</code> folder.</li>
-<li>Open the file you wish to edit.</li>
-<li>Edit.</li>
-</ol>
-
-<a href="#paths" id="paths" style="color: inherit; text-decoration: none;">
-  <h3>Paths</h3>
-</a>
-
-<a href="#adding-a-path" id="adding-a-path" style="color: inherit; text-decoration: none;">
-  <h4>Adding a Path</h4>
-</a>
-<ol>
-<li>Navigate to the <code>openapi/paths</code> folder.</li>
-<li>Add a new YAML file named like your URL endpoint except replacing <code>/</code> with <code>@</code> and putting path parameters into curly braces like <code>{example}</code>.</li>
-<li>Add the path and a ref to it inside of your <code>openapi.yaml</code> file inside of the <code>openapi</code> folder.</li>
-</ol>
-<p>Example addition to the <code>openapi.yaml</code> file:</p>
-<pre><code class="language-yaml"><span class="hl-2">&#39;/customers/{id}&#39;</span><span class="hl-1">:</span><br/><span class="hl-1">  </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">&#39;./paths/customers@{id}.yaml&#39;</span>
-</code></pre>
-<p>Here is an example of a YAML file named <code>customers@{id}.yaml</code> in the <code>paths</code> folder:</p>
-<pre><code class="language-yaml"><span class="hl-0">get</span><span class="hl-1">:</span><br/><span class="hl-1">  </span><span class="hl-0">tags</span><span class="hl-1">:</span><br/><span class="hl-1">    - </span><span class="hl-2">Customers</span><br/><span class="hl-1">  </span><span class="hl-0">summary</span><span class="hl-1">: </span><span class="hl-2">Retrieve a list of customers</span><br/><span class="hl-1">  </span><span class="hl-0">operationId</span><span class="hl-1">: </span><span class="hl-2">GetCustomerCollection</span><br/><span class="hl-1">  </span><span class="hl-0">description</span><span class="hl-1">: </span><span class="hl-5">|</span><br/><span class="hl-2">    You can have a markdown description here.</span><br/><span class="hl-1">  </span><span class="hl-0">parameters</span><span class="hl-1">:</span><br/><span class="hl-1">    - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/parameters/collectionLimit.yaml</span><br/><span class="hl-1">    - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/parameters/collectionOffset.yaml</span><br/><span class="hl-1">    - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/parameters/collectionFilter.yaml</span><br/><span class="hl-1">    - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/parameters/collectionQuery.yaml</span><br/><span class="hl-1">    - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/parameters/collectionExpand.yaml</span><br/><span class="hl-1">    - </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/parameters/collectionFields.yaml</span><br/><span class="hl-1">  </span><span class="hl-0">responses</span><span class="hl-1">:</span><br/><span class="hl-1">    </span><span class="hl-2">&#39;200&#39;</span><span class="hl-1">:</span><br/><span class="hl-1">      </span><span class="hl-0">description</span><span class="hl-1">: </span><span class="hl-2">A list of Customers was retrieved successfully</span><br/><span class="hl-1">      </span><span class="hl-0">headers</span><span class="hl-1">:</span><br/><span class="hl-1">        </span><span class="hl-0">Rate-Limit-Limit</span><span class="hl-1">:</span><br/><span class="hl-1">          </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/headers/Rate-Limit-Limit.yaml</span><br/><span class="hl-1">        </span><span class="hl-0">Rate-Limit-Remaining</span><span class="hl-1">:</span><br/><span class="hl-1">          </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/headers/Rate-Limit-Remaining.yaml</span><br/><span class="hl-1">        </span><span class="hl-0">Rate-Limit-Reset</span><span class="hl-1">:</span><br/><span class="hl-1">          </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/headers/Rate-Limit-Reset.yaml</span><br/><span class="hl-1">        </span><span class="hl-0">Pagination-Total</span><span class="hl-1">:</span><br/><span class="hl-1">          </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/headers/Pagination-Total.yaml</span><br/><span class="hl-1">        </span><span class="hl-0">Pagination-Limit</span><span class="hl-1">:</span><br/><span class="hl-1">          </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/headers/Pagination-Limit.yaml</span><br/><span class="hl-1">        </span><span class="hl-0">Pagination-Offset</span><span class="hl-1">:</span><br/><span class="hl-1">          </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/headers/Pagination-Offset.yaml</span><br/><span class="hl-1">      </span><span class="hl-0">content</span><span class="hl-1">:</span><br/><span class="hl-1">        </span><span class="hl-0">application/json</span><span class="hl-1">:</span><br/><span class="hl-1">          </span><span class="hl-0">schema</span><span class="hl-1">:</span><br/><span class="hl-1">            </span><span class="hl-0">type</span><span class="hl-1">: </span><span class="hl-2">array</span><br/><span class="hl-1">            </span><span class="hl-0">items</span><span class="hl-1">:</span><br/><span class="hl-1">              </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/schemas/Customer.yaml</span><br/><span class="hl-1">        </span><span class="hl-0">text/csv</span><span class="hl-1">:</span><br/><span class="hl-1">          </span><span class="hl-0">schema</span><span class="hl-1">:</span><br/><span class="hl-1">            </span><span class="hl-0">type</span><span class="hl-1">: </span><span class="hl-2">array</span><br/><span class="hl-1">            </span><span class="hl-0">items</span><span class="hl-1">:</span><br/><span class="hl-1">              </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/schemas/Customer.yaml</span><br/><span class="hl-1">    </span><span class="hl-2">&#39;401&#39;</span><span class="hl-1">:</span><br/><span class="hl-1">      </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/responses/AccessForbidden.yaml</span><br/><span class="hl-1">  </span><span class="hl-0">x-code-samples</span><span class="hl-1">:</span><br/><span class="hl-1">    - </span><span class="hl-0">lang</span><span class="hl-1">: </span><span class="hl-2">PHP</span><br/><span class="hl-1">      </span><span class="hl-0">source</span><span class="hl-1">:</span><br/><span class="hl-1">        </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../code_samples/PHP/customers/get.php</span><br/><span class="hl-0">post</span><span class="hl-1">:</span><br/><span class="hl-1">  </span><span class="hl-0">tags</span><span class="hl-1">:</span><br/><span class="hl-1">    - </span><span class="hl-2">Customers</span><br/><span class="hl-1">  </span><span class="hl-0">summary</span><span class="hl-1">: </span><span class="hl-2">Create a customer (without an ID)</span><br/><span class="hl-1">  </span><span class="hl-0">operationId</span><span class="hl-1">: </span><span class="hl-2">PostCustomer</span><br/><span class="hl-1">  </span><span class="hl-0">description</span><span class="hl-1">: </span><span class="hl-2">Another markdown description here.</span><br/><span class="hl-1">  </span><span class="hl-0">requestBody</span><span class="hl-1">:</span><br/><span class="hl-1">    </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/requestBodies/Customer.yaml</span><br/><span class="hl-1">  </span><span class="hl-0">responses</span><span class="hl-1">:</span><br/><span class="hl-1">    </span><span class="hl-2">&#39;201&#39;</span><span class="hl-1">:</span><br/><span class="hl-1">      </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/responses/Customer.yaml</span><br/><span class="hl-1">    </span><span class="hl-2">&#39;401&#39;</span><span class="hl-1">:</span><br/><span class="hl-1">      </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/responses/AccessForbidden.yaml</span><br/><span class="hl-1">    </span><span class="hl-2">&#39;409&#39;</span><span class="hl-1">:</span><br/><span class="hl-1">      </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/responses/Conflict.yaml</span><br/><span class="hl-1">    </span><span class="hl-2">&#39;422&#39;</span><span class="hl-1">:</span><br/><span class="hl-1">      </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../components/responses/InvalidDataError.yaml</span><br/><span class="hl-1">  </span><span class="hl-0">x-code-samples</span><span class="hl-1">:</span><br/><span class="hl-1">    - </span><span class="hl-0">lang</span><span class="hl-1">: </span><span class="hl-2">PHP</span><br/><span class="hl-1">      </span><span class="hl-0">source</span><span class="hl-1">:</span><br/><span class="hl-1">        </span><span class="hl-0">$ref</span><span class="hl-1">: </span><span class="hl-2">../code_samples/PHP/customers/post.php</span>
-</code></pre>
-<p>You&#39;ll see extensive usage of <code>$ref</code>s in this example to different types of components including schemas.</p>
-<p>You&#39;ll also notice <code>$ref</code>s to code samples.</p>
-
-<a href="#code-samples" id="code-samples" style="color: inherit; text-decoration: none;">
-  <h3>Code samples</h3>
-</a>
-<ol>
-<li>Navigate to the <code>openapi/code_samples</code> folder.</li>
-<li>Navigate to the <code>&lt;language&gt;</code> (e.g. PHP) sub-folder.</li>
-<li>Navigate to the <code>path</code> folder, and add ref to the code sample.</li>
-</ol>
-<p>You can add languages by adding new folders at the appropriate path level.</p>
-<p>More details inside the <code>code_samples</code> folder README.</p>
+<p>AGPL-3.0</p>
 </div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul><li class="tsd-kind-enum"><a href="enums/OPENMEV_METAMASK_CHAIN_ID.html" class="tsd-kind-icon">OPENMEV_<wbr/>METAMASK_<wbr/>CHAIN_<wbr/>ID</a></li><li class="tsd-kind-class"><a href="classes/InjectedConnector.html" class="tsd-kind-icon">Injected<wbr/>Connector</a></li><li class="tsd-kind-class"><a href="classes/NoEthereumProviderError.html" class="tsd-kind-icon">No<wbr/>Ethereum<wbr/>Provider<wbr/>Error</a></li><li class="tsd-kind-class"><a href="classes/UserRejectedRequestError.html" class="tsd-kind-icon">User<wbr/>Rejected<wbr/>Request<wbr/>Error</a></li><li class="tsd-kind-type-alias"><a href="modules.html#Send" class="tsd-kind-icon">Send</a></li><li class="tsd-kind-type-alias"><a href="modules.html#SendOld" class="tsd-kind-icon">Send<wbr/>Old</a></li><li class="tsd-kind-type-alias"><a href="modules.html#SendReturn" class="tsd-kind-icon">Send<wbr/>Return</a></li><li class="tsd-kind-type-alias"><a href="modules.html#SendReturnResult" class="tsd-kind-icon">Send<wbr/>Return<wbr/>Result</a></li><li class="tsd-kind-variable"><a href="modules.html#ChainId" class="tsd-kind-icon">Chain<wbr/>Id</a></li><li class="tsd-kind-variable"><a href="modules.html#MAINNET" class="tsd-kind-icon">MAINNET</a></li><li class="tsd-kind-variable"><a href="modules.html#MAINNET_CHAIN_ID" class="tsd-kind-icon">MAINNET_<wbr/>CHAIN_<wbr/>ID</a></li><li class="tsd-kind-variable"><a href="modules.html#MAINNET_NETWORK_ID" class="tsd-kind-icon">MAINNET_<wbr/>NETWORK_<wbr/>ID</a></li><li class="tsd-kind-variable"><a href="modules.html#MAINNET_RPC_URL" class="tsd-kind-icon">MAINNET_<wbr/>RPC_<wbr/>URL</a></li><li class="tsd-kind-variable"><a href="modules.html#OPENMEV_METAMASK_SUPPORTED_NETWORKS" class="tsd-kind-icon">OPENMEV_<wbr/>METAMASK_<wbr/>SUPPORTED_<wbr/>NETWORKS</a></li><li class="tsd-kind-variable"><a href="modules.html#OPENMEV_RELAY_ENABLED" class="tsd-kind-icon">OPENMEV_<wbr/>RELAY_<wbr/>ENABLED</a></li><li class="tsd-kind-variable"><a href="modules.html#OPENMEV_SUPPORTED_NETWORKS" class="tsd-kind-icon">OPENMEV_<wbr/>SUPPORTED_<wbr/>NETWORKS</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li><li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li></ul><ul class="tsd-legend"><li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>
