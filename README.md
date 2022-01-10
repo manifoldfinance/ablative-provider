@@ -1,5 +1,7 @@
 # `ablative provider`
 
+[![CI](https://github.com/manifoldfinance/ablative-provider/actions/workflows/main.yml/badge.svg)](https://github.com/manifoldfinance/ablative-provider/actions/workflows/main.yml)
+
 > 🔗 https://www.npmjs.com/package/ablative-provider
 
 
